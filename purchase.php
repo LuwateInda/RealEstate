@@ -1,0 +1,190 @@
+
+
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content = "width=device-width, initial-scale-1.0">
+        <title>Real Estate</title>
+        <!--Css Links-->
+        <link rel = "stylesheet" href = "./Assets/CSS/style.css">
+        <!--BoxIcons-->
+        <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    </head>
+    <body>
+        <!--Navbar-->
+        <header>
+            <div class = "nav container">
+                <!--Logo-->
+                <a href = "index.html" class = "logo"><i class='bx bx-home'></i>Real Estate</a>
+
+                <!--Menu icon-->
+                <input type = "chckbox" name = "" id ="menu">
+                <label for = "menu"> <i class='bx bx-menu' id = "menu-icon"></i></label>
+
+                <!--Nav ist-->
+                <ul class = "navbar">
+                    <li><a href = "index.html">Home</a></li>
+                    <li><a href = "listings.html">Properties</a></li>
+                    <li><a href = "index.html">About</a></li>
+                    <li><a href = "#footer">Contacts</a></li>
+                </ul>
+
+               
+            </div>
+        </header>
+
+        
+
+        <!--listing images-->
+        <section class="about container" id = "about">
+            
+            <div class = "listing-img">
+                <img src = "Assets/img/appartment1.png" alt = "">
+                
+                
+
+            </div>
+            <div class = "room-img">
+                <img src = "Assets/img/room1.png" alt = "">
+                <img src = "Assets/img/room2.png" alt = "">
+            </div>
+
+            <div class = "more-img">
+                <img src = "Assets/img/room3.png" alt = "">
+                <img src = "Assets/img/backyard.png" alt = "">
+            </div>
+        </section>
+
+        <!--Listing Details-->
+        <section class = "listing-details container" id = "listings">
+            <div class="about-text">
+                <span>Rodan Palace</span>
+                <h2></h2>
+                <p>5 bedroom house located in Hurlingham, Nairobi.<br></p>
+                <p>Price: ksh. 2,400,000 </p>
+                
+                <div class="icon">
+                    <i class='bx bx-bed'><span>5</span></i>
+                    <i class='bx bx-bath'><span>3</span></i>
+                    <i class='bx bx-map'><span>Hurlingham, Nairobi</span></i>
+                </div>
+
+            </div>  
+            
+           
+        </section>
+
+        <section class = "cards container">
+            <div class = "agents">
+                <div class = "box">
+                    <i class='bx bx-user'></i>
+                    <h3>Peter Pan</h3>
+                    <p>Sales Agent</p>
+                    <p>Charge: ksh. 10,000</p>
+                    <p>076534287</p>
+                    <i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i>
+                </div>
+
+                <div class = "box">
+                    <i class='bx bx-user'></i>
+                    <h3>Ruth Onicha</h3>
+                    <p>Sales Agent</p>
+                    <p>Charge: ksh. 7,000</p>
+                    <p>076565437</p>
+                    <i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star-half' ></i>
+                </div>
+                <div class = "box">
+                    <i class='bx bx-user'></i>
+                    <h3>Sanjay Craig</h3>
+                    <p>Sales Agent</p>
+                    <p>Charge: ksh. 5,000</p>
+                    <p>079876544</p>
+                    <i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bx-star' ></i>
+                </div>
+            </div>
+        </section>
+        
+        <!--Contact and map-->
+        <section class = "map container">
+            <div class = "login container">
+                <div class="login-container">
+                    <h2>Contact Agent</h2>
+                
+                    <!--Contact Form-->
+                    <form action = "https://formspree.io/f/meqndvpo" method="POST" id = "my-form">
+                        <input type = "hidden" name = "_subject" id = "subject" value = "New Purchase Inquiry">
+
+                        <span>Full Name</span>
+                        <input type ="text" name = "Name" id = "name" placeholder = "Your Name" required>
+                        <span>Enter your email address</span>
+                        <input type = "email" name = "Email" id = "email" placeholder = "yourmail@gmail.com" required>
+                        <span>Phone</span>
+                        <input type = "tel" name = "Phone" id = "phone" placeholder="Enter your number" required>
+                        <span>Property of Interest</span>
+                        <input type = "text" name = "Property" id = "property" placeholder = "House/ Property name" required>
+                        <span>Agent's Name</span>
+                        <input type ="text" name = "Agent" id = "agent" placeholder = "Agent's Name" required>
+
+                        <button type="submit" class = "button">Contact Agent</button>
+                        
+                    </form>
+                    
+                </div>
+
+                <!--Map-->
+                <div class = "gmap">
+                    <div class="mapouter"><div class="gmap_canvas"><iframe width="600" height="500" border-radius = "1rem" id="gmap_canvas" src="https://maps.google.com/maps?q=Hurlingham&t=k&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://123movies-to.org">123movies</a><br><style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}</style><a href="https://www.embedgooglemap.net">embed google maps on website</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style></div></div>
+                </div>
+            </div>
+        </section>
+       
+        <!--NewsLetter-->
+        <section class="newsletter container">
+            <h2>Any questions?</h2>
+            <form action = "">
+                <input type = "email" name = "" id = "email-box" placeholder = "yourmail@gmail.com">
+                <input type = "submit" value = "send" class = "btn">
+            </form>
+        </section>
+
+        <!--Footer-->
+        <section class="footer" id = "footer">
+            <div class="footer-container container">
+                <h2>Real Estate</h2>
+                <div class="footer-box">
+                    <h3>Quick Links</h3>
+                    <a href="#">Agency</a>
+                    <a href="#">Building</a>
+                    <a href="#">Rates</a>
+                </div>
+
+                <div class="footer-box">
+                    <h3>Locations</h3>
+                    <a href="#">Nairobi</a>
+                    <a href="#">Mombasa</a>
+                    <a href="#">Kisumu</a>
+                </div>
+
+                <div class="footer-box">
+                    <h3>Contacts</h3>
+                    <a href="#">0712345678</a>
+                    <a href="#">yourmail@gmail.com</a>
+                    <div class = "social">
+                        <a href = "#"><i class='bx bxl-instagram'></i></a>
+                        <a href = "#"><i class='bx bxl-twitter'></i></a>
+                        <a href = "#"><i class='bx bxl-facebook'></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Copyright-->
+        <div class="copyright">
+            <p>&#169; Group 9 All Rights Reserved</p>
+        </div>
+
+    </body>
+</html>
+

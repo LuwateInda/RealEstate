@@ -6,8 +6,8 @@ $date = $_POST['date'];
 $time = $_POST['time'];
 
 //Below is the login details for the database. Fill in before 
-$user = 'Luwate';
-$pass = '$Password$';
+$user = 'luwate';
+$pass = 'etawul';
 $db = 'myproperty';
 
 //Database connection
